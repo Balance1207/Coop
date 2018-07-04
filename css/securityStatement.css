@@ -1,7 +1,6 @@
 .main .text-center {
     border-bottom: 1px solid #000;
     padding-bottom: 22px;
-    margin-bottom: 50px;
 }
 
 .main .text-center > h2 {
@@ -17,7 +16,29 @@
     padding-bottom: 30px;
 }
 
+.main .container {
+    padding-bottom: 120px;
+}
+
 .main h4 {
-    border-left: 4px solid #000;
     padding-left: 6px;
+    margin: 50px 0 40px;
+    border-left: 4px solid #000;
+}
+
+.main dl dt {
+    text-align: left;
+    width: 18px;
+    color: #fff;
+    background-color: #000;
+    padding: 0px 5px;
+}
+
+.main dl dd {
+    margin: 0 0 28px 65px;
+}
+
+.main ul li {
+   list-style-type: disc;
+    margin: 0 0 20px 82px;
 }
