@@ -1,0 +1,145 @@
+.team-banner .team-display {
+    position: relative;
+}
+
+.team-banner .team-display > h2 {
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-banner .team-display > h3 {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 45px;
+}
+
+.team-banner .team-display > ul {
+    width: 245px;
+    margin: 40px auto 24px;
+}
+
+.team-banner .team-display li {
+    float: left;
+}
+
+.team-banner .team-display li:not(:first-child) {
+    margin-left: 83px;
+}
+
+.team-banner .team-display li p {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 11px;
+    opacity: 0.8;
+}
+
+.main {
+    background-color: #F8F8F8;
+    padding: 40px 0 20px;
+}
+
+.main .row, .main .row > div {
+    margin-bottom: 40px;
+    /*padding: 0 15px;*/
+}
+
+.main .thumbnail {
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+.main .thumbnail > img {
+    margin-top: 36px;
+}
+
+.main .address {
+    color: #b2b1b1;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    top: 36px;
+    left: 36px;
+}
+
+.main .address > span {
+    vertical-align: middle;
+}
+
+.main .caption > h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main .caption > p {
+    font-size: 12px;
+    font-weight: 300;
+    width: 334px;
+    height: 34px;
+    padding: 0 20px;
+    text-overflow: ellipsis;
+}
+
+.main .about-team {
+    position: relative;
+}
+
+.main .about-team > div {
+    display: inline-block;
+}
+
+.main .about-team small, .main .about-team span {
+    color: #b2b1b1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main .about-team p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.main .about-team > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 14px;
+    bottom: 0;
+
+}
+
+.main .about-team > .team-member {
+    margin-right: 70px;
+}
+
+.main .about-team > .project-finished {
+    margin-left: 70px;
+}
+
+.main a.view{
+    display: inline-block;
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    color: #000;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    border: 3px solid #f8f8f8;
+    border-radius: 24px;
+    position: relative;
+    top: 26px;
+}
+
+.main a.view:hover {
+    color: #fff;
+    background-color: #000;
+}
+

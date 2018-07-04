@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '思源黑体 CN';
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: '思源黑体 CN';
+    src: url("../fonts/SourceHanSansCN-Regular.otf");
+}
+
+/* 字体粗细 Start */
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+/* 字体粗细 End */
+
+.float-clear:after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
+    height: 0;
+}
+
+/* 导航样式 Start */
+header {
+    color: #fff;
+    height: 54px;
+    line-height: 54px;
+    background: url("../img/nav_back.png");
+    background-size: 100% 100%;
+}
+
+header a {
+    color: #fff;
+    padding: 20px;
+}
+
+header a:hover, footer a:hover {
+    color: #fff;
+}
+
+header .logo {
+    margin-left: 6%;
+    height: 54px;
+}
+
+nav {
+    margin-right: 6%;
+    font-size: 14px;
+}
+
+nav li {
+    float: left;
+    margin-left: 60px;
+}
+
+nav li:last-child {
+    position: relative;
+}
+
+nav input {
+    width: 160px;
+    height: 32px;
+    color: #000;
+    border-width: 0;
+    padding: 0 35px 0 20px;
+    outline: none;
+    border-radius: 16px;
+}
+
+nav img {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+}
+/* 导航样式 End */
+
+/* 页面banner Start */
+.content {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.team-banner {
+    background: url("../img/team_back.jpg");
+    background-size: 100% 100%;
+}
+
+.project-banner, .crowdFunding-banner {
+    background: url("../img/project_back.jpg");
+    background-size: 100% 100%;
+}
+
+.project-banner ul li, .crowdFunding-banner ul li {
+    display: inline-block;
+    padding: 44px 5px 10px;
+}
+
+.project-banner ul span, .crowdFunding-banner ul span {
+    color: #D0D0D0;
+}
+
+.project-banner ul img, .crowdFunding-banner ul img {
+    margin-bottom: 17px;
+}
+
+.project-banner ul p:nth-child(2), .crowdFunding-banner ul p:nth-child(2) {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.project-banner ul + p, .crowdFunding-banner ul + p {
+    color: #b2b1b1;
+    margin-bottom: 18px;
+}
+/* 页面banner End */
+
+/* 项目、众筹：Title、Status  Start */
+.main > .text-center > h2 {
+    font-size: 70px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48px;
+    background-image: linear-gradient(rgba(240,240,240,0.8),rgba(240,240,240,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main > .text-center > h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 112px;
+    margin-top: 0;
+}
+
+.main .text-center ul li {
+    display: inline;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.main .text-center ul li:not(:first-child) {
+    margin-left: 76px;
+}
+
+.main .project-status-active, .main .crowdFunding-status-active {
+    border-bottom: 4px solid #000;
+}
+/* 项目、众筹：标题、状态  End */
+
+/* 分页 Start */
+.turnPage li {
+    display: inline;
+    color: #b2b1b1;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.turnPage li:not(:first-child) {
+    margin-left: 36px;
+}
+
+.turnPage li:first-child, .turnPage li:last-child {
+    display: inline-block;
+    width: 80px;
+    height: 22px;
+    border: 1px solid #b2b1b1;
+    border-radius: 16px;
+}
+
+.turnPage li:first-child {
+    background-color: #000;
+}
+
+.turnPage .page-active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+/* 分页 End */
+
+/* 底部 Start */
+footer {
+    color: #fff;
+    font-size: 13px;
+    padding: 40px 0 20px;
+    background: url("../img/footer_back.jpg");
+}
+
+footer img {
+    margin-bottom: 40px;
+}
+
+footer p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+footer a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 80px;
+}
+
+footer .row:first-child > div:last-child {
+    padding-top: 20px;
+}
+
+footer .row:last-child p{
+    color: #666;
+    font-size: 11px;
+    margin-top: 40px;
+}
+/* 底部 End */

@@ -1,0 +1,23 @@
+.main .text-center {
+    border-bottom: 1px solid #000;
+    padding-bottom: 22px;
+    margin-bottom: 50px;
+}
+
+.main .text-center > h2 {
+    margin-top: 54px;
+}
+
+.main > .text-center > h3 {
+    padding-top: 92px;
+}
+
+.main > .text-center span {
+    border-bottom: 3px solid;
+    padding-bottom: 30px;
+}
+
+.main h4 {
+    border-left: 4px solid #000;
+    padding-left: 6px;
+}

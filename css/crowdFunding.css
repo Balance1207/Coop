@@ -1,0 +1,95 @@
+.main {
+    background-color: #fff;
+    position: relative;
+}
+
+.main .text-center ul {
+    border-bottom: 1px solid #f8f8f8;
+    padding: 25px 0 12px;
+    margin-bottom: 0;
+}
+
+.crowdFunding-project {
+    background-color: #fff;
+}
+
+.background {
+    background-color: #F8F8F8;
+    padding: 60px 0 100px;
+}
+
+.background .row > div {
+    margin-bottom: 60px;
+}
+
+.crowdFunding-project {
+    padding: 40px 40px 5px;
+    position: relative;
+    top: 37px;
+}
+
+.crowdFunding-project > h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.crowdFunding-project > p {
+    font-size: 12px;
+}
+
+.crowdFunding-project > p > span:first-child {
+    color: #fff;
+    background-color: #000;
+    padding: 4px 6px;
+    margin-right: 8px;
+}
+
+.crowdFunding-project > div:nth-child(3) {
+    background-color: #f8f8f8;
+    padding: 20px 19px 10px;
+    margin-top: 20px;
+}
+
+.crowdFunding-project > div:nth-child(3) > p span {
+    vertical-align: middle;
+}
+
+.crowdFunding-project > div:nth-child(3) > p span:nth-child(2) {
+    margin-right: 45px;
+}
+
+.crowdFunding-project > div:nth-child(3) > p img {
+    vertical-align: text-bottom;
+}
+
+.crowdFunding-project a {
+    display: inline-block;
+    color: #000;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin-top: 18px;
+}
+
+.crowdFunding-project .progress {
+    max-width: 400px;
+    height: 6px;
+    margin-top: 26px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.crowdFunding-project .progress-bar {
+    background-color: #000;
+}
+
+.crowdFunding-project .progress-percent {
+    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+    right: 15%;
+}
