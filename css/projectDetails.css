@@ -1,0 +1,127 @@
+.main .row {
+    position: relative;
+}
+
+.main .row h2 {
+    font-size: 70px;
+    position: absolute;
+    top: 18px;
+    background-image: linear-gradient(rgba(240,240,240,0.8),rgba(240,240,240,0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .row h3 {
+    font-size: 22px;
+    margin-top: 84px;
+}
+
+.main .status-time {
+    font-size: 12px;
+}
+
+.main .status-time > span:first-child {
+    color: #fff;
+    background-color: #000;
+    padding: 4px 8px;
+    margin-right: 8px;
+}
+
+.main .price {
+    border-left: 4px solid #000;
+    padding-left: 8px;
+}
+
+.main .projectManager {
+    font-size: 12px;
+    margin-top: 85px;
+}
+
+.main .projectManager > span:nth-child(2) {
+    color: #b2b1b1;
+    margin: 0 10px;
+}
+
+.development-content {
+    margin-top: 60px;
+}
+
+.development-content > span, .project-team > span {
+    color: #b2b1b1;
+    font-size: 12px;
+}
+
+.development-content > ul > li, .project-team > ul > li {
+    font-size: 18px;
+    padding-left: 38px;
+    display: inline;
+}
+
+.development-content > ul > li:first-child, .project-team > ul > li:first-child {
+    padding-left: 0;
+}
+
+.development-content > ul > ul {
+    margin-left: 60px;
+}
+
+.development-content > ul > ul > li {
+    margin-top: 24px;
+}
+
+.project-team {
+    position: relative;
+    margin-top: 70px;
+}
+
+.project-team > ul > li:last-child {
+    font-size: 12px;
+}
+
+.project-team > p {
+    margin: 28px 0 40px 60px;
+}
+
+.project-team > p > span:first-child {
+    color: #515151;
+    margin-right: 10px;
+}
+
+.project-team > p > span:last-child {
+    font-size: 26px;
+}
+
+.project-team > button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    margin: 0 0 120px 58px;
+    outline: none;
+}
+
+.project-team .project-apply {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 2px 2px 30px #E0E0E0;
+    position: absolute;
+    left: 350px;
+    bottom: 120px;
+    display: none;
+}
+
+.project-team .project-apply > p {
+    margin: 10px 0;
+}
+
+.project-team .project-apply > span {
+    padding: 8px 12px;
+    background-color: #e8e8e8;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -16px;
+    right: 104px;
+    cursor: pointer;
+}
