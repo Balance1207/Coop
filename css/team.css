@@ -42,7 +42,7 @@
 
 .main {
     background-color: #F8F8F8;
-    padding: 40px 0 20px;
+    padding: 40px 0 60px;
 }
 
 .main .row, .main .row > div {
@@ -80,7 +80,6 @@
 
 .main .caption > p {
     font-size: 12px;
-    font-weight: 300;
     width: 334px;
     height: 34px;
     padding: 0 20px;
@@ -98,12 +97,11 @@
 .main .about-team small, .main .about-team span {
     color: #b2b1b1;
     font-size: 12px;
-    font-weight: 500;
 }
 
 .main .about-team p {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .main .about-team > span {
@@ -125,13 +123,12 @@
 
 .main a.view{
     display: inline-block;
+    color: #000;
+    font-size: 13px;
     width: 120px;
     height: 48px;
-    line-height: 48px;
-    color: #000;
+    line-height: 46px;
     background-color: #fff;
-    font-size: 13px;
-    font-weight: 500;
     border: 3px solid #f8f8f8;
     border-radius: 24px;
     position: relative;
