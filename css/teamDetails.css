@@ -1,9 +1,9 @@
-.main .background {
+.main .banner {
     background: url("../img/team_back.jpg");
     color: #fff;
 }
 
-.main .background h2 {
+.main .banner h2 {
     font-size: 70px;
     position: absolute;
     top: 18px;
@@ -12,17 +12,17 @@
     -webkit-text-fill-color: transparent;
 }
 
-.main .background h3 {
+.main .banner h3 {
     font-size: 22px;
     margin-top: 84px;
 }
 
-.main .background p:last-child {
+.main .banner p:last-child {
     font-size: 12px;
     margin-bottom: 50px;
 }
 
-.main .team-members, .main .team-location {
+.main .team-numbers, .main .team-location {
     font-size: 12px;
     color: #000;
     background-color: #fff;
@@ -41,20 +41,21 @@
 }
 
 .team-introduction {
-    margin-top: 75px;
+    padding-top: 75px;
     position: relative;
 }
 
 .team-introduction > img {
     position: absolute;
-    top: 110px;
+    top: 200px;
 }
 
-.team-introduction > ul > ul {
-    margin-left: 124px;
+.team-introduction > ul > li > ul {
+    margin: 40px 0 0 124px;
 }
 
-.team-introduction > ul > ul > li {
+.team-introduction > ul > li > ul > li {
+    font-size: 14px;
     margin-top: 24px;
 }
 
@@ -88,6 +89,7 @@
 }
 
 .team-introduction .project-dev {
+    /*display: none;*/
     width: 460px;
     height: 360px;
     background-color: #fff;
@@ -95,6 +97,10 @@
     position: absolute;
     top: 0;
     right: 122px;
+}
+
+.project-dev > h4 {
+    margin: 30px 0 0 30px;
 }
 
 .project-dev > span {
@@ -107,12 +113,30 @@
     right: 20px;
 }
 
-.project-dev .project-content p {
+.project-dev .project-list {
+    width: 460px;
+    height: 200px;
+    margin-top: 35px;
+    overflow: auto;
+}
+
+.project-list li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.project-list p {
     display: inline-block;
 }
 
+.project-list span {
+    float: right;
+    margin-right: 60px;
+}
+
 .project-team {
-    margin-top: 70px;
+    margin: 40px 0 30px;
 }
 
 .project-team > ul > li:last-child {
@@ -122,4 +146,467 @@
 
 .group-activities {
     margin-top: 75px;
+}
+
+.background {
+    position:relative;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.background > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.background > img:last-child {
+    position:absolute;
+    top: 164px;right: 0;
+}
+
+.slideshow {
+    position:relative;
+    z-index: 99;
+}
+
+.slideshow > a {
+    position: relative;
+    padding: 16px 19px;
+}
+
+.slideshow .prev {
+    background-color: #fff;
+    bottom: 17px;
+}
+
+.slideshow .next {
+    background-color: #000;
+    top: 19px;
+    right: 4px;
+}
+
+.team-show {
+    display: inline-block;
+}
+
+.team-members {
+    display: inline-block;
+    font-size: 0;
+    width: 520px;
+    height: 360px;
+    vertical-align: middle;
+    float: left;
+}
+
+.team-leader {
+    display: inline-block;
+    width: 390px;
+    height: 360px;
+    background-color: #fff;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+.team-leader > .leader {
+    position: relative;
+}
+
+.team-leader > .leader > img:first-child {
+    margin-right: 14px;
+}
+
+.team-leader > .leader a {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.team-leader > p, .team-leader > ul {
+    font-size: 12px;
+}
+
+.team-leader > p:nth-child(2) {
+    margin: 20px 0;
+}
+
+.team-leader > p:last-child > img {
+    vertical-align: text-top;
+}
+
+.team-leader li {
+    display: inline;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+.team-leader .about-team {
+    position: relative;
+    margin: 46px 0 26px 0;
+}
+
+.team-leader .about-team > div {
+    display: inline-block;
+}
+
+.team-leader .about-team small, .team .about-team span {
+    color: #b2b1b1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.team-leader .about-team p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.team-leader .about-team > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 14px;
+    bottom: 0;
+
+}
+
+.team-leader .about-team > .team-member {
+    margin-right: 70px;
+}
+
+.team-leader .about-team > .project-finished {
+    margin-left: 70px;
+}
+
+.team-leader > p:last-child {
+    font-size: 12px;
+}
+
+.team-leader > p:last-child .pull-right {
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.teamDisplay > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.teamDisplay > img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+}
+
+.img-border {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #000;
+}
+
+.potential-risks > ul > li > ul > li {
+    list-style-type: disc;
+}
+
+.background {
+    position:relative;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.background > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.background > img:last-child {
+    position:absolute;
+    top: 164px;right: 0;
+}
+
+.slideshow {
+    position:relative;
+    z-index: 99;
+}
+
+.slideshow > a {
+    position: relative;
+    padding: 16px 19px;
+}
+
+.slideshow .prev {
+    background-color: #fff;
+    bottom: 17px;
+}
+
+.slideshow .next {
+    background-color: #000;
+    top: 19px;
+    right: 4px;
+}
+
+.team-show {
+    display: inline-block;
+}
+
+.team-members {
+    display: inline-block;
+    font-size: 0;
+    width: 520px;
+    height: 360px;
+    vertical-align: middle;
+    float: left;
+}
+
+.team-leader {
+    display: inline-block;
+    width: 390px;
+    height: 360px;
+    background-color: #fff;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+.team-leader > .leader {
+    position: relative;
+}
+
+.team-leader > .leader > img:first-child {
+    margin-right: 14px;
+}
+
+.team-leader > .leader a {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.team-leader > p, .team-leader > ul {
+    font-size: 12px;
+}
+
+.team-leader > p:nth-child(2) {
+    margin: 20px 0;
+}
+
+.team-leader > p:last-child > img {
+    vertical-align: text-top;
+}
+
+.team-leader li {
+    display: inline;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+.team-leader .about-team {
+    position: relative;
+    margin: 46px 0 26px 0;
+}
+
+.team-leader .about-team > div {
+    display: inline-block;
+}
+
+.team-leader .about-team small, .team .about-team span {
+    color: #b2b1b1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.team-leader .about-team p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.team-leader .about-team > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 14px;
+    bottom: 0;
+
+}
+
+.team-leader .about-team > .team-member {
+    margin-right: 70px;
+}
+
+.team-leader .about-team > .project-finished {
+    margin-left: 70px;
+}
+
+.team-leader > p:last-child {
+    font-size: 12px;
+}
+
+.team-leader > p:last-child .pull-right {
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.teamDisplay > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.teamDisplay > img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+}
+
+.img-border {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #000;
+}
+
+.background {
+    position:relative;
+    background-color: #f8f8f8;
+    padding: 30px 0;
+}
+
+.background > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.background > img:last-child {
+    position:absolute;
+    top: 164px;right: 0;
+}
+
+.slideshow {
+    position:relative;
+    z-index: 99;
+}
+
+.slideshow > a {
+    position: relative;
+    padding: 16px 19px;
+}
+
+.slideshow .prev {
+    background-color: #fff;
+    bottom: 17px;
+}
+
+.slideshow .next {
+    background-color: #000;
+    top: 19px;
+    right: 4px;
+}
+
+.team-show {
+    display: inline-block;
+}
+
+.team-members {
+    display: inline-block;
+    font-size: 0;
+    width: 520px;
+    height: 360px;
+    vertical-align: middle;
+    float: left;
+}
+
+.team-leader {
+    display: inline-block;
+    width: 390px;
+    height: 360px;
+    background-color: #fff;
+    padding: 30px;
+    vertical-align: middle;
+}
+
+.team-leader > .leader {
+    position: relative;
+}
+
+.team-leader > .leader > img:first-child {
+    margin-right: 14px;
+}
+
+.team-leader > .leader a {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.team-leader > p, .team-leader > ul {
+    font-size: 12px;
+}
+
+.team-leader > p:nth-child(2) {
+    margin: 20px 0;
+}
+
+.team-leader > p:last-child > img {
+    vertical-align: text-top;
+}
+
+.team-leader li {
+    display: inline;
+    padding: 5px;
+    background-color: #F0F0F0;
+}
+
+.team-leader .about-team {
+    position: relative;
+    margin: 46px 0 26px 0;
+}
+
+.team-leader .about-team > div {
+    display: inline-block;
+}
+
+.team-leader .about-team small, .team .about-team span {
+    color: #b2b1b1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.team-leader .about-team p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.team-leader .about-team > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 14px;
+    bottom: 0;
+
+}
+
+.team-leader .about-team > .team-member {
+    margin-right: 70px;
+}
+
+.team-leader .about-team > .project-finished {
+    margin-left: 70px;
+}
+
+.team-leader > p:last-child {
+    font-size: 12px;
+}
+
+.team-leader > p:last-child .pull-right {
+    color: #b2b1b1;
+    cursor: pointer;
+}
+
+.teamDisplay > img:first-child {
+    position: absolute;
+    top: 216px;
+}
+
+.teamDisplay > img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+}
+
+.img-border {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #000;
 }
