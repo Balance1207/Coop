@@ -2,12 +2,7 @@
     padding-bottom: 80px;
 }
 
-.crowdFunding_details {
-    box-shadow: 0 5px 20px #E0E0E0;
-    position: relative;
-}
-
-.crowdFunding_details .container {
+.crowdFunding_details, .crowdFunding_details .container {
     position: relative;
 }
 
@@ -218,23 +213,32 @@
 
 .crowdFunding_details > .crowdFunding-about {
     text-align: center;
-    padding-top: 22px;
+    width: 100%;
+    box-shadow: 0 5px 20px #E0E0E0;
+    z-index: 999;
 }
 
 .crowdFunding_details > .crowdFunding-about li {
     display: inline-block;
-    padding-bottom: 14px;
+    line-height: 57px;
     cursor: pointer;
+}
+
+.crowdFunding-border:after {
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 22px;
+    height: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #000;
 }
 
 .crowdFunding_details > .crowdFunding-about span {
     font-size: 12px;
     margin: 0 45px;
     vertical-align: text-bottom;
-}
-
-.crowdFunding-border {
-    border-bottom: 4px solid #000;
 }
 
 .crowdFunding > .crowdFunding-des {
@@ -316,7 +320,7 @@
 .crowdFunding_details > img {
     width: 100%;
     position: absolute;
-    top: 1470px;
+    top: 1400px;
 }
 
 .background {
