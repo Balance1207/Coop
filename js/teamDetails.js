@@ -19,4 +19,20 @@ $(document).ready(function () {
             $(this).css('background-color', '#fff');
         }
     );
+
+    // 浏览更多
+    $('.activities-details .showMore').click(function () {
+        $('.activities-list:not(:first-child), .activities-list > div > ul:not(:first-child)').slideDown(500);
+        $(this)
+            .hide()
+            .next().show();
+    });
+
+    // 收起更多
+    $('.activities-details .hideMore').click(function () {
+        $('.activities-list:not(:first-child), .activities-list > div > ul:not(:first-child)').slideUp(500);
+        $(this)
+            .hide()
+            .prev().show();
+    });
 });

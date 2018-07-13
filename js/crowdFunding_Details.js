@@ -1,10 +1,21 @@
 $(document).ready(function () {
 
-    // 滚动固定
-    // var x = $('.crowdFunding-about').offset().top;
-    // $(window).scroll(function () {
-    //     var x = $('.crowdFunding-about').offset().top;
-    //     console.log(x, '111')
+    // 导航列表固定
+    var navH = $('.crowdFunding-about').offset().top;
+    $(window).scroll(function () {
+       var scrollHeight =  $(this).scrollTop();
+       if (scrollHeight >= navH) {
+           $('.crowdFunding-about').css({'position': 'fixed', 'top': 0, 'background-color': '#fff'})
+       } else if (scrollHeight < navH) {
+           $('.crowdFunding-about').css('position', 'static');
+       }
+    });
+
+    // 滚动到项目方案
+    // $('.crowdFunding-about > li:first-child').click(function () {
+    //     var documentHeight = $(document).height();
+    //     var projectPlanH = $('.project-plan').offset().top;
+    //     console.log(projectPlanH)
     // });
 
     // 联系项目方
@@ -29,10 +40,4 @@ $(document).ready(function () {
             .siblings().removeClass('crowdFunding-border');
     });
 
-    // 团队成员轮播
-    // $('next').on('click', '.team-member > img', function () {
-    //    $(this)
-    //        .addClass('img-border')
-    //        .siblings().removeClass('img-border');
-    // });
 });
