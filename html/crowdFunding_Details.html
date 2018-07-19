@@ -41,17 +41,18 @@
                     </div>
                     <div class="col-md-3 col-xs-12">
                         <div class="projectManager">
-                            <img src="../img/project_manager.png" alt="project_manager">
+                            <img src="../img/upload/project_manager.png" alt="project_manager">
                             <span>项目方</span>
                             <span>VISION</span>
-                            <button type="button">联系对方</button>
-                            <span><img src="../img/contact.png" alt="contact person"></span>
+                            <button type="button" onclick="contact_projectManager()">联系对方</button>
+                            <span><img src="../img/upload/contact.png" alt="contact person"></span>
                         </div>
                     </div>
+                    <!-- 立即申请box Start -->
                     <div class="support-crowdFunding">
                         <h4>
                             支持该众筹
-                            <img src="../img/close.png" alt="close">
+                            <img src="../img/close.png" alt="close" onclick="supportCrowdFunding_hide()">
                         </h4>
                         <p>投资意向 > 项目投资双方线下协商合作 > 平台反馈合作结果</p>
                         <input type="text" placeholder="输入意向投资金额（数字）">
@@ -61,14 +62,22 @@
                             <input type="text" placeholder="输入联系电话">
                         </div>
                         <p>
-                            <button>确认申请</button>
+                            <button type="button" onclick="applySuccess_show()">确认申请</button>
                             <span>申请并审核通过后您将可以看到项目方的联系方式</span>
                         </p>
                     </div>
+                    <!-- 立即申请box End -->
+                    <!-- 申请成功 Start -->
+                    <div class="apply-success">
+                        <img src="../img/apply_success.png" alt="apply_success">
+                        <p>申请成功，请静候佳音</p>
+                        <button type="button" onclick="applySuccess_hide()">我知道了</button>
+                    </div>
+                    <!-- 申请成功 End -->
                 </div>
                 <div class="row">
                     <div class="col-md-6 hidden-xs">
-                        <img src="../img/picture1_.jpg" alt="photo">
+                        <img src="../img/upload/picture1_.jpg" alt="photo">
                     </div>
                     <div class="col-md-6 col-xs-12 crowdFunding-project">
                         <p class="crowdFunding-status">
@@ -99,20 +108,20 @@
                             </div>
                         </div>
                         <div class="progress-percent">10%</div>
-                        <button type="button">立即支持</button>
+                        <button type="button" onclick="supportCrowdFunding_show()">立即支持</button>
                     </div>
                 </div>
             </div>
-            <ul class="crowdFunding-about">
-                <li class="crowdFunding-border">项目方案</li>
+            <ul class="crowdFunding-about" onscroll="navList_fixed()">
+                <li class="crowdFunding-border" onclick="scroll_to_plan()">项目方案</li>
                 <span>|</span>
-                <li>资金使用</li>
+                <li onclick="scroll_to_funds()">资金使用</li>
                 <span>|</span>
-                <li>支持记录</li>
+                <li onclick="scroll_to_support()">支持记录</li>
                 <span>|</span>
-                <li>项目团队</li>
+                <li onclick="scroll_to_team()">项目团队</li>
                 <span>|</span>
-                <li>风险说明</li>
+                <li onclick="scroll_to_risk()">风险说明</li>
             </ul>
             <img src="../img/border.png" alt="border_bottom">
         </div>
@@ -123,7 +132,7 @@
                 </span>
                 <ul>
                     <li class="font-weight-700">一</li>
-                    <li class="font-weight-700">项目团队</li>
+                    <li class="font-weight-700">项目方案</li>
                     <li>
                         <ul>
                             <li>足迹是服务于旅游业的专业向导平台，制定线路规则，创新开辟新的路线，全新跟团规则，并非传统旅游走马观花式游览。</li>
@@ -207,21 +216,21 @@
             <img src="../img/back_left.jpg" alt="back_left">
             <div class="container slideshow">
                 <a href="javascript:void(0);" class="prev">
-                    <img src="../img/black_left.png" alt="black_left">
+                    <img src="../img/slide_black_left.png" alt="black_left">
                 </a>
                 <div class="team-show">
                     <div class="team-members">
-                        <img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">
-                        <img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">
-                        <img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">
-                        <img src="../img/person_4.png" alt="4">
-                        <!--<img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">-->
-                        <!--<img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">-->
-                        <!--<img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">-->
+                        <img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">
+                        <img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">
+                        <img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">
+                        <img src="../img/upload/person_4.png" alt="4">
+                        <!--<img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">-->
+                        <!--<img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">-->
+                        <!--<img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">-->
                     </div>
                     <div class="team-leader">
                         <div class="leader">
-                            <img src="../img/team_leader.png" alt="taem_leader">
+                            <img src="../img/upload/team_leader.png" alt="taem_leader">
                             <span>阿sir · leader</span>
                             <a href="javascript:void(0);">
                                 <img src="../img/chat.png" alt="chat">
@@ -248,12 +257,54 @@
                         <p>
                             <img src="../img/point.png" alt="point">
                             <span>靠谱点：1563（真的靠谱）</span>
-                            <span class="pull-right">点数说明</span>
+                            <span class="pull-right" onclick="pointInstruction_show()">点数说明</span>
                         </p>
+                        <!-- 点数说明 Start -->
+                        <div class="point-instruction">
+                            <h4>
+                                点数说明
+                                <span class="pull-right" onclick="pointInstruction_hide()">×</span>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <span>0 - 9</span>
+                                    <span>不靠谱</span>
+                                </li>
+                                <li>
+                                    <span>11 - 30</span>
+                                    <span>快要靠谱</span>
+                                </li>
+                                <li>
+                                    <span>40 - 89</span>
+                                    <span>有点靠谱</span>
+                                </li>
+                                <li>
+                                    <span>90 - 149</span>
+                                    <span>十分靠谱</span>
+                                </li>
+                                <li>
+                                    <span>150 - 249</span>
+                                    <span>相当靠谱</span>
+                                </li>
+                                <li>
+                                    <span>250 - 500</span>
+                                    <span>非常靠谱</span>
+                                </li>
+                                <li>
+                                    <span>501 - 1000</span>
+                                    <span>极其靠谱</span>
+                                </li>
+                                <li>
+                                    <span>1000以上</span>
+                                    <span>真的靠谱</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 点数说明 End -->
                     </div>
                 </div>
                 <a href="javascript:void(0);" class="next">
-                    <img src="../img/white_right.png" alt="white_right">
+                    <img src="../img/slide_white_right.png" alt="white_right">
                 </a>
             </div>
             <img src="../img/back_right.jpg" alt="back_right">
@@ -276,6 +327,27 @@
             </ul>
         </div>
     </div>
+    <!-- 侧边固定栏Start -->
+    <div class="sidebar">
+        <ul>
+            <li>
+                <img src="../img/customer_service.png" alt="customer_service">
+            </li>
+            <li>
+                <img src="../img/QR_bar.png" alt="QR_bar">
+                <div class="QR-bar">
+                    <img src="../img/contact.png" alt="contact_us">
+                </div>
+            </li>
+            <li>
+                <img src="../img/top.png" alt="return_top" onclick="returnTop()">
+                <div class="top">
+                    返回顶部
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 侧边固定栏End -->
     <footer>
         <div class="container">
             <div class="row">
@@ -304,5 +376,6 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/crowdFunding_Details.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>

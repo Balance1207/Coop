@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-3 col-xs-12">
                     <div class="projectManager">
-                        <img src="../img/project_manager.png" alt="project_manager">
+                        <img src="../img/upload/project_manager.png" alt="project_manager">
                         <span>项目方</span>
                         <span>VISION</span>
                     </div>
@@ -77,15 +77,38 @@
                     <li>该项目还没有选择团队参与开发</li>
                 </ul>
                 <p><span>申请该项目的团队数</span><span>3</span></p>
-                <button>立刻申请</button>
+                <button type="button" onclick="QRbar_show()">立刻申请</button>
+                <!-- 项目详情二维码box Start -->
                 <div class="project-apply">
-                    <img src="../img/QR-bar.png" alt="QR-bar">
+                    <img src="../img/upload/QR-bar.png" alt="QR-bar">
                     <p>用微信扫一扫查看项目完整信息</p>
-                    <span><img src="../img/close.png" alt="closeButton"></span>
+                    <span onclick="QRbar_hide()"><img src="../img/close.png" alt="closeButton"></span>
                 </div>
+                <!-- 项目详情二维码box End -->
             </div>
         </div>
     </div>
+    <!-- 侧边固定栏Start -->
+    <div class="sidebar">
+        <ul>
+            <li>
+                <img src="../img/customer_service.png" alt="customer_service">
+            </li>
+            <li>
+                <img src="../img/QR_bar.png" alt="QR_bar">
+                <div class="QR-bar">
+                    <img src="../img/contact.png" alt="contact_us">
+                </div>
+            </li>
+            <li>
+                <img src="../img/top.png" alt="return_top" onclick="returnTop()">
+                <div class="top">
+                    返回顶部
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 侧边固定栏End -->
     <footer>
         <div class="container">
             <div class="row">
@@ -114,5 +137,6 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/projectDetails.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>

@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-3 col-xs-12">
                     <div class="projectManager">
-                        <img src="../img/project_manager.png" alt="project_manager">
+                        <img src="../img/upload/project_manager.png" alt="project_manager">
                         <span>项目方</span>
                         <span>VISION</span>
                     </div>
@@ -90,17 +90,17 @@
                 </a>
                 <div class="team-show">
                     <div class="team-members">
-                        <img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">
-                        <img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">
-                        <img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">
-                        <img src="../img/person_4.png" alt="4">
-                        <!--<img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">-->
-                        <!--<img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">-->
-                        <!--<img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">-->
+                        <img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">
+                        <img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">
+                        <img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">
+                        <img src="../img/upload/person_4.png" alt="4">
+                        <!--<img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">-->
+                        <!--<img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">-->
+                        <!--<img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">-->
                     </div>
                     <div class="team-leader">
                         <div class="leader">
-                            <img src="../img/team_leader.png" alt="taem_leader">
+                            <img src="../img/upload/team_leader.png" alt="taem_leader">
                             <span>阿sir · leader</span>
                             <a href="javascript:void(0);">
                                 <img src="../img/chat.png" alt="chat">
@@ -127,8 +127,50 @@
                         <p>
                             <img src="../img/point.png" alt="point">
                             <span>靠谱点：1563（真的靠谱）</span>
-                            <span class="pull-right">点数说明</span>
+                            <span class="pull-right" onclick="pointInstruction_show()">点数说明</span>
                         </p>
+                        <!-- 点数说明 Start -->
+                        <div class="point-instruction">
+                            <h4>
+                                点数说明
+                                <span class="pull-right" onclick="pointInstruction_hide()">×</span>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <span>0 - 9</span>
+                                    <span>不靠谱</span>
+                                </li>
+                                <li>
+                                    <span>11 - 30</span>
+                                    <span>快要靠谱</span>
+                                </li>
+                                <li>
+                                    <span>40 - 89</span>
+                                    <span>有点靠谱</span>
+                                </li>
+                                <li>
+                                    <span>90 - 149</span>
+                                    <span>十分靠谱</span>
+                                </li>
+                                <li>
+                                    <span>150 - 249</span>
+                                    <span>相当靠谱</span>
+                                </li>
+                                <li>
+                                    <span>250 - 500</span>
+                                    <span>非常靠谱</span>
+                                </li>
+                                <li>
+                                    <span>501 - 1000</span>
+                                    <span>极其靠谱</span>
+                                </li>
+                                <li>
+                                    <span>1000以上</span>
+                                    <span>真的靠谱</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 点数说明 End -->
                     </div>
                 </div>
                 <a href="javascript:void(0);" class="next">
@@ -138,6 +180,27 @@
             <img src="../img/back_right.jpg" alt="back_right">
         </div>
     </div>
+    <!-- 侧边固定栏Start -->
+    <div class="sidebar">
+        <ul>
+            <li>
+                <img src="../img/customer_service.png" alt="customer_service">
+            </li>
+            <li>
+                <img src="../img/QR_bar.png" alt="QR_bar">
+                <div class="QR-bar">
+                    <img src="../img/contact.png" alt="contact_us">
+                </div>
+            </li>
+            <li>
+                <img src="../img/top.png" alt="return_top" onclick="returnTop()">
+                <div class="top">
+                    返回顶部
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 侧边固定栏End -->
     <footer>
         <div class="container">
             <div class="row">
@@ -166,5 +229,6 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/projectDetails.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>

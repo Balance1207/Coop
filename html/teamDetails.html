@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-md-3 col-xs-12">
                         <div class="projectManager">
-                            <img src="../img/project_manager.png" alt="project_manager">
+                            <img src="../img/upload/project_manager.png" alt="project_manager">
                             <span>团队队长</span>
                             <span>VISION</span>
                         </div>
@@ -55,7 +55,7 @@
         </div>
         <div class="container">
             <div class="team-introduction">
-                <img src="../img/introduction_logo.png" alt="introduction_logo">
+                <img src="../img/upload/introduction_logo.png" alt="introduction_logo">
                 <span>
                     <em>INTRODUCTION<br>TEAM</em>
                 </span>
@@ -63,7 +63,7 @@
                     <li class="font-weight-700">一</li>
                     <li class="font-weight-700">团队介绍</li>
                     <li class="pull-right">
-                        <a href="javascript:void(0);">参与的项目</a>
+                        <a href="javascript:void(0);" onclick="teamProject_show()">参与的项目</a>
                     </li>
                     <li>
                         <ul>
@@ -76,7 +76,7 @@
                 <!-- 团队参与的项目弹出框 Start -->
                 <div class="project-dev">
                     <h4 class="font-weight-700">参与的项目</h4>
-                    <span><img src="../img/close.png" alt="close"></span>
+                    <span onclick="teamProject_hide()"><img src="../img/close.png" alt="close"></span>
                     <ul class="project-list">
                         <li>
                             <p>人工智能行为识别系统</p>
@@ -116,22 +116,66 @@
         <div class="container-fluid background">
             <img src="../img/back_left.jpg" alt="back_left">
             <div class="container slideshow">
-                <a href="javascript:void(0);" class="prev">
-                    <img src="../img/black_left.png" alt="black_left">
+                <a href="javascript:void(0);" class="prev" onclick="img_prev()">
+                    <img src="../img/slide_black_left.png" alt="black_left">
                 </a>
                 <div class="team-show">
-                    <div class="team-members">
-                        <img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">
-                        <img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">
-                        <img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">
-                        <img src="../img/person_4.png" alt="4">
-                        <!--<img src="../img/person_2.png" alt="2" style="position:relative;top: 30px;">-->
-                        <!--<img src="../img/person_1.png" alt="1" style="position: relative;top: 90px;">-->
-                        <!--<img src="../img/person_3.png" alt="3" style="position: relative;top: 60px;">-->
+                    <div class="team-box" style="width: 520px;height: 390px;overflow: hidden;">
+                        <div class="team-members">
+                            <a href="javascript:void(0)" class="img-border" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_1.png" alt="1">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>项目策划</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_2.png" alt="2">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>产品经理</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_3.png" alt="3">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>UI设计师</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_4.png" alt="4">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>PHP工程师</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_2.png" alt="5">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>前端开发</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_1.png" alt="6">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>Python</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_3.png" alt="7">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>量化交易</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="team-leader">
                         <div class="leader">
-                            <img src="../img/team_leader.png" alt="taem_leader">
+                            <img src="../img/upload/team_leader.png" alt="taem_leader">
                             <span>阿sir · leader</span>
                             <a href="javascript:void(0);">
                                 <img src="../img/chat.png" alt="chat">
@@ -158,12 +202,54 @@
                         <p>
                             <img src="../img/point.png" alt="point">
                             <span>靠谱点：1563（真的靠谱）</span>
-                            <span class="pull-right">点数说明</span>
+                            <span class="pull-right" onclick="pointInstruction_show()">点数说明</span>
                         </p>
+                        <!-- 点数说明 Start -->
+                        <div class="point-instruction">
+                            <h4>
+                                点数说明
+                                <span class="pull-right" onclick="pointInstruction_hide()">×</span>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <span>0 - 9</span>
+                                    <span>不靠谱</span>
+                                </li>
+                                <li>
+                                    <span>11 - 30</span>
+                                    <span>快要靠谱</span>
+                                </li>
+                                <li>
+                                    <span>40 - 89</span>
+                                    <span>有点靠谱</span>
+                                </li>
+                                <li>
+                                    <span>90 - 149</span>
+                                    <span>十分靠谱</span>
+                                </li>
+                                <li>
+                                    <span>150 - 249</span>
+                                    <span>相当靠谱</span>
+                                </li>
+                                <li>
+                                    <span>250 - 500</span>
+                                    <span>非常靠谱</span>
+                                </li>
+                                <li>
+                                    <span>501 - 1000</span>
+                                    <span>极其靠谱</span>
+                                </li>
+                                <li>
+                                    <span>1000以上</span>
+                                    <span>真的靠谱</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 点数说明 End -->
                     </div>
                 </div>
-                <a href="javascript:void(0);" class="next">
-                    <img src="../img/white_right.png" alt="white_right">
+                <a href="javascript:void(0);" class="next" onclick="img_next()">
+                    <img src="../img/slide_black_right.png" alt="white_right">
                 </a>
             </div>
             <img src="../img/back_right.jpg" alt="back_right">
@@ -227,17 +313,38 @@
                         </ul>
                     </div>
                 </div>
-                <button type="button" class="showMore">
+                <button type="button" class="showMore" onclick="showMore()">
                     浏览更多
                     <img src="../img/more_show.png" alt="show_more">
                 </button>
-                <button type="button" class="hideMore">
+                <button type="button" class="hideMore" onclick="hideMore()">
                     收起更多
                     <img src="../img/more_hide.png" alt="hide_more">
                 </button>
             </div>
         </div>
     </div>
+    <!-- 侧边固定栏Start -->
+    <div class="sidebar">
+        <ul>
+            <li>
+                <img src="../img/customer_service.png" alt="customer_service">
+            </li>
+            <li>
+                <img src="../img/QR_bar.png" alt="QR_bar">
+                <div class="QR-bar">
+                    <img src="../img/contact.png" alt="contact_us">
+                </div>
+            </li>
+            <li>
+                <img src="../img/top.png" alt="return_top" onclick="returnTop()">
+                <div class="top">
+                    返回顶部
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 侧边固定栏End -->
     <footer>
         <div class="container">
             <div class="row">
@@ -266,5 +373,6 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/teamDetails.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 </html>
