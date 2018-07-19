@@ -210,6 +210,7 @@
 
 .team-leader {
     display: inline-block;
+    position: relative;
     width: 390px;
     height: 360px;
     background-color: #fff;
@@ -243,7 +244,7 @@
     vertical-align: text-top;
 }
 
-.team-leader li {
+.team-leader > ul > li {
     display: inline;
     padding: 5px;
     background-color: #F0F0F0;
@@ -290,9 +291,39 @@
     font-size: 12px;
 }
 
-.team-leader > p:last-child .pull-right {
+.team-leader > p:nth-last-child(2) .pull-right {
     color: #b2b1b1;
     cursor: pointer;
+}
+
+.team-leader > .point-instruction {
+    display: none;
+    width: 300px;
+    height: 360px;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 5px 15px #E0E0E0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.point-instruction h4 > span {
+    color: #b2b1b1;
+    padding: 5px;
+    position: relative;
+    bottom: 6px;
+    cursor: pointer;
+}
+
+.point-instruction li {
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.point-instruction li span:last-child {
+    float: right;
 }
 
 .teamDisplay > img:first-child {
