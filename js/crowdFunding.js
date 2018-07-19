@@ -15,7 +15,7 @@ $(document).ready(function() {
     );
 
     // project status
-    $('.main').on('click', '.text-center li', function() {
+    $('.main').on('click', '.text-center > ul > li', function() {
         $(this)
             .addClass('crowdFunding-status-active')
             .siblings().removeClass('crowdFunding-status-active');

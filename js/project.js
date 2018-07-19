@@ -16,7 +16,7 @@ $(document).ready(function() {
     );
 
     // project status
-    $('.main').on('click', '.text-center li', function() {
+    $('.main').on('click', '.text-center > ul > li', function() {
         $(this)
             .addClass('project-status-active')
             .siblings().removeClass('project-status-active');

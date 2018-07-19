@@ -1,12 +1,9 @@
-$(document).ready(function() {
+// QR-bar show
+function QRbar_show() {
+    $('.project-apply').show();
+}
 
-    // QR-bar show
-    $('.project-team > button').click(function() {
-        $('.project-apply').show();
-    });
-
-    // QR-bar hide
-    $('.project-apply > span').click(function() {
-        $('.project-apply').hide();
-    })
-});
+// QR-bar hide
+function QRbar_hide() {
+    $('.project-apply').hide();
+}
