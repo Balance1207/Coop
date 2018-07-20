@@ -10,14 +10,6 @@ $(document).ready(function () {
            $('.crowdFunding-about').css('position', 'static');
        }
     });
-
-    // 关于众筹
-    $('.crowdFunding-about').on('click', 'li', function () {
-        $(this)
-            .addClass('crowdFunding-border')
-            .siblings().removeClass('crowdFunding-border');
-    });
-
 });
 
 // 联系项目方
@@ -46,8 +38,16 @@ function applySuccess_hide() {
     $('.apply-success').hide();
 }
 
+// 关于众筹
+function about_crowdFunding(obj) {
+    $(obj)
+        .addClass('crowdFunding-border')
+        .siblings().removeClass('crowdFunding-border');
+}
+
 // 滚动至项目方案
-function scroll_to_plan() {
+function scroll_to_plan(obj) {
+    about_crowdFunding(obj);
     var planH = $('.project-plan').offset().top;
     if (planH == 784 || 714) {
         $('html').animate({scrollTop: 644}, 500);
@@ -55,7 +55,8 @@ function scroll_to_plan() {
 }
 
 // 滚动至资金使用
-function scroll_to_funds() {
+function scroll_to_funds(obj) {
+    about_crowdFunding(obj);
     var fundsH = $('.funds-using').offset().top;
     if (fundsH == 1102 || 1032) {
         $('html').animate({scrollTop: 962}, 500);
@@ -63,7 +64,8 @@ function scroll_to_funds() {
 }
 
 // 滚动至支持记录
-function scroll_to_support() {
+function scroll_to_support(obj) {
+    about_crowdFunding(obj);
     var supportH = $('.support-record').offset().top;
     if (supportH == 1400 || 1330) {
         $('html').animate({scrollTop: 1260}, 500);
@@ -71,14 +73,17 @@ function scroll_to_support() {
 }
 
 // 滚动至项目团队
-function scroll_to_team() {
+function scroll_to_team(obj) {
+    about_crowdFunding(obj);
     var teamH = $('.project-team').offset().top;
     if (teamH == 1766 || 1696) {
         $('html').animate({scrollTop: 1620}, 500);
     }
 }
 
-function scroll_to_risk() {
+// 滚动至风险说明
+function scroll_to_risk(obj) {
+    about_crowdFunding(obj);
     var riskH = $('.potential-risks').offset().top;
     console.log(riskH);
     if (riskH == 2341 || 2271) {
