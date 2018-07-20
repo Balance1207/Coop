@@ -199,6 +199,12 @@
     position: relative;
 }
 
+.team-box {
+    width: 520px;
+    height: 390px;
+    overflow: hidden;
+}
+
 .team-members {
     display: inline-block;
     font-size: 0;
@@ -218,11 +224,11 @@
     height: 270px;
 }
 
-.team-members > a:first-child, .team-members > a:nth-last-child(2) {
+.team-members > a:first-child, .team-members > a:nth-child(6) {
     top: 90px;
 }
 
-.team-members > a:nth-child(3), .team-members > a:last-child {
+.team-members > a:nth-child(3), .team-members > a:nth-child(7) {
     top: 60px;
 }
 
@@ -293,7 +299,7 @@
     margin: 20px 0;
 }
 
-.team-leader > p:last-child > img {
+.team-leader > p:nth-last-child(2) > img {
     vertical-align: text-top;
 }
 

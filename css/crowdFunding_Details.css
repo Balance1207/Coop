@@ -342,7 +342,7 @@
 .background {
     position:relative;
     background-color: #f8f8f8;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
 }
 
 .background > img:first-child {
@@ -352,7 +352,8 @@
 
 .background > img:last-child {
     position:absolute;
-    top: 164px;right: 0;
+    top: 164px;
+    right: 0;
 }
 
 .slideshow {
@@ -367,35 +368,95 @@
 
 .slideshow .prev {
     background-color: #fff;
-    bottom: 17px;
+    bottom: 135px;
 }
 
 .slideshow .next {
-    background-color: #000;
-    top: 19px;
-    right: 4px;
+    background-color: #fff;
+    bottom: 187px;
+    left: 386px;
 }
 
 .team-show {
     display: inline-block;
+    position: relative;
+}
+
+.team-box {
+    width: 520px;
+    height: 390px;
+    overflow: hidden;
 }
 
 .team-members {
     display: inline-block;
     font-size: 0;
-    width: 520px;
+    width: 910px;
     height: 360px;
     vertical-align: middle;
-    float: left;
+    position: relative;
+}
+
+.team-members > a {
+    display: inline-block;
+    position: relative;
+}
+
+.team-members img {
+    width: 130px;
+    height: 270px;
+}
+
+.team-members > a:first-child, .team-members > a:nth-child(6) {
+    top: 90px;
+}
+
+.team-members > a:nth-child(3), .team-members > a:nth-child(7) {
+    top: 60px;
+}
+
+.team-members > a:nth-child(2), .team-members > a:nth-child(5) {
+    top: 30px;
+}
+
+.team-members > a > div {
+    position: absolute;
+    top: 0;
+    width: 130px;
+    height: 270px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 110px;
+    opacity: 0.6;
+    display: none;
+}
+
+.team-members > a:hover .role {
+    display: block;
+}
+
+.img-border:after {
+    margin: 25px auto 0;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .team-leader {
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: 390px;
     height: 360px;
     background-color: #fff;
     padding: 30px;
+    top: 0;
+    left: 520px;
     vertical-align: middle;
 }
 
@@ -516,11 +577,6 @@
     position: absolute;
     right: 0;
     bottom: 125px;
-}
-
-.img-border {
-    padding-bottom: 30px;
-    border-bottom: 3px solid #000;
 }
 
 .potential-risks > ul > li > ul > li {
