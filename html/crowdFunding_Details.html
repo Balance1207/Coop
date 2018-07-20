@@ -113,15 +113,15 @@
                 </div>
             </div>
             <ul class="crowdFunding-about" onscroll="navList_fixed()">
-                <li class="crowdFunding-border" onclick="scroll_to_plan()">项目方案</li>
+                <li class="crowdFunding-border" onclick="scroll_to_plan(this)">项目方案</li>
                 <span>|</span>
-                <li onclick="scroll_to_funds()">资金使用</li>
+                <li onclick="scroll_to_funds(this)">资金使用</li>
                 <span>|</span>
-                <li onclick="scroll_to_support()">支持记录</li>
+                <li onclick="scroll_to_support(this)">支持记录</li>
                 <span>|</span>
-                <li onclick="scroll_to_team()">项目团队</li>
+                <li onclick="scroll_to_team(this)">项目团队</li>
                 <span>|</span>
-                <li onclick="scroll_to_risk()">风险说明</li>
+                <li onclick="scroll_to_risk(this)">风险说明</li>
             </ul>
             <img src="../img/border.png" alt="border_bottom">
         </div>
@@ -219,14 +219,58 @@
                     <img src="../img/slide_black_left.png" alt="black_left">
                 </a>
                 <div class="team-show">
-                    <div class="team-members">
-                        <img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">
-                        <img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">
-                        <img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">
-                        <img src="../img/upload/person_4.png" alt="4">
-                        <!--<img src="../img/upload/person_2.png" alt="2" style="position:relative;top: 30px;">-->
-                        <!--<img src="../img/upload/person_1.png" alt="1" style="position: relative;top: 90px;">-->
-                        <!--<img src="../img/upload/person_3.png" alt="3" style="position: relative;top: 60px;">-->
+                    <div class="team-box">
+                        <div class="team-members">
+                            <a href="javascript:void(0)" class="img-border" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_1.png" alt="1">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>项目策划</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_2.png" alt="2">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>产品经理</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_3.png" alt="3">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>UI设计师</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_4.png" alt="4">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>PHP工程师</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_2.png" alt="5">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>前端开发</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_1.png" alt="6">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>Python</p>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="add_imgBorder(this)">
+                                <img src="../img/upload/person_3.png" alt="7">
+                                <div class="role">
+                                    <p>VISION</p>
+                                    <p>量化交易</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="team-leader">
                         <div class="leader">
@@ -304,7 +348,7 @@
                     </div>
                 </div>
                 <a href="javascript:void(0);" class="next">
-                    <img src="../img/slide_white_right.png" alt="white_right">
+                    <img src="../img/slide_black_right.png" alt="white_right">
                 </a>
             </div>
             <img src="../img/back_right.jpg" alt="back_right">
